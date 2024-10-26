@@ -9,6 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm -v'
+                echo "done installing"
             }
         }
     }
