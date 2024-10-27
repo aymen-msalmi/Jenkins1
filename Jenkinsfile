@@ -4,6 +4,9 @@ pipeline {
             image 'node:21-alpine'
         }
     }
+    triggers {
+        pollSCM('1 * * * *')
+    }
 
     stages {
         stage('build') {
