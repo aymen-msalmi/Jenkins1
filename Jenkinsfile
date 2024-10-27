@@ -18,6 +18,7 @@ pipeline {
         always {
             echo 'always !'
             emailext body: 'Build finished', subject: 'Build Status', to: 'aymen.msalmi@esprit.tn
+            echo 'email sent !'
         }
         success {
             echo 'success !'
