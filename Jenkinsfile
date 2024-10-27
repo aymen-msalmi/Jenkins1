@@ -17,7 +17,7 @@ pipeline {
     post {
         always {
             echo 'always !'
-            emailext (to: 'aymen.msalmi@esprit.tn',cc :'msalmi.aymen.89@gmail.com' ,body: '$DEFAULT_CONTENT',subject:'$DEFAULT_SUBJECT' )
+            emailext (to: 'aymen.msalmi@esprit.tn', cc :'msalmi.aymen.89@gmail.com' ,body: '$DEFAULT_CONTENT',subject:'$DEFAULT_SUBJECT' )
             echo 'email sent !'
         }
         success {
